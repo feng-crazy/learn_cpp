@@ -1,0 +1,4 @@
+/mnt/hgfs/linux_share/code/my_test_c++/protobuf_test/build/CMakeFiles/rebuild_cache.dir
+/mnt/hgfs/linux_share/code/my_test_c++/protobuf_test/build/CMakeFiles/writer.dir
+/mnt/hgfs/linux_share/code/my_test_c++/protobuf_test/build/CMakeFiles/edit_cache.dir
+/mnt/hgfs/linux_share/code/my_test_c++/protobuf_test/build/CMakeFiles/reader.dir

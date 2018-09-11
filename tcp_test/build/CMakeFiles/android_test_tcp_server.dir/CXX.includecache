@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/hgfs/linux_share/code/my_test_c++/android_test/tcp_server.cpp
+sys/types.h
+-
+sys/socket.h
+-
+stdio.h
+-
+netinet/in.h
+-
+arpa/inet.h
+-
+unistd.h
+-
+string.h
+-
+stdlib.h
+-
+fcntl.h
+-
+sys/shm.h
+-
+iostream
+-
+

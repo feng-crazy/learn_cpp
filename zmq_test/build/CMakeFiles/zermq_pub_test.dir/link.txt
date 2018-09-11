@@ -1,0 +1,1 @@
+/usr/bin/x86_64-linux-gnu-g++      CMakeFiles/zermq_pub_test.dir/zermq_pub_test.cpp.o  -o zermq_pub_test  -L/mnt/hgfs/linux_share/code/my_test_c++/zmq_test/build/lib  -L/usr/local/lib -rdynamic -lzmq 

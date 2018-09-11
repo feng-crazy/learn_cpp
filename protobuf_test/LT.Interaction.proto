@@ -1,0 +1,90 @@
+syntax = "proto2";
+package LT; 
+message interaction 
+{ 
+	//终端信息消息，在manager获取终端信息，终端列表的时候使用
+	//或者在manager修改终端信息的时候，将配置发送到控制器，由控制的终端对象判断，信息是否改变，改变的话就发送终端
+	message TerminalInfo
+	{
+		required string hostname = 1;
+		required string mac_addr = 2;
+		required string ip_addr = 3;
+		optional string sensor_channel = 4;
+		optional string sensor_height = 5;
+		optional string sensor_offset = 6;
+		optional string romote_ip_addr = 7;
+		optional bool calibration_status = 8;
+		//optional string term_config = 9;
+	}
+	
+	//基站信息消息，在manager获取基站信息，基站列表的时候使用
+	//或者在manager修改基站信息的时候，将发送发送到控制器，由控制器相应的的基站对象对比，
+	//信息是否改变，改变的话就调用响应修改基站的命令
+	message BaseStationInfo
+	{
+		required string hostname = 1;
+		required uint32 bs_id = 2;
+		required uint32 ingroup_addr = 3;
+		optional string bs_freq = 4;
+		optional string bs_location = 5;
+		optional string bs_orientation = 6;
+		optional bool  led_status = 7;
+		optional bool  motor_status = 8;
+		optional string  motor_speed = 9;
+	}
+	
+	//该功能留给命令行控制基站修改基站配置的功能使用，另外还有发送基站配置消息，
+	//由控制器去判断某一个基站的信息是否改变，如果改变就使用相应命令修改
+	//如果是使用库的方式调用bs_control的话，就需要使用这种方式，如果使用命令行的方式调用bs_control,
+	//一个string字段就可以搞定
+	message BaseCommandInfo
+	{
+		enum  BaseCommandId
+		{
+			SET_ADDR_CMD = 0;
+			SET_FREQ_CMD = 1;
+			SET_MOTOR_CMD = 2;
+			SET_LED_CMD = 3;
+			LS_CMD = 4;
+			LS_ALL = 5;
+		}
+		
+		required BaseCommandId cmd_id = 1;
+		optional string cmd_arg1 = 2;
+		optional string cmd_arg2 = 3;
+		optional string cmd_arg3 = 4;
+		//optional string cmd_str = 4;//预留给命令行模式，命令行调用bs_control的功能
+	}
+	
+	//终端控制命令，指定终端进入标定，退出标定
+	message TermCommandInfo
+	{
+		enum  TermCommandId
+		{
+			ENTER_FIXED_CMD = 0;
+			QUIT_FIXED_CMD = 1;
+			REBOOT_TERM_CMD = 2;
+		}
+		
+		required TermCommandId cmd_id = 1;
+		optional string cmd_arg1 = 2;
+		optional string cmd_arg2 = 3;
+		optional string cmd_arg3 = 4;
+	}
+	
+	required int32     msg_id = 1;  // msg_id 
+	
+	optional TerminalInfo    terminal_info = 2;  // TerminalInfo 
+	optional TermCommandInfo terminal_cmd_info = 3; //TermCommandInfo
+	optional bool terminal_cmd_result = 4;      //终端命令返回的结果
+	
+	optional BaseStationInfo    base_station_info = 5;  // BaseStationInfo 
+	optional BaseCommandInfo    base_cmd_info = 6;  // BaseCommandInfo
+	optional bool base_cmd_result = 7;   //基站命令返回的结果
+	
+	optional string config_file = 9;
+	
+	repeated TerminalInfo terminal_info_list = 10;
+	repeated BaseStationInfo base_station_info_list = 11;
+	
+}

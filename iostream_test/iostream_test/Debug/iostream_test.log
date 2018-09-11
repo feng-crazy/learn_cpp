@@ -1,0 +1,8 @@
+﻿  main.cpp
+f:\workspace\my_cpp_test\iostream_test\iostream_test\main.cpp(54): warning C4244: “=”: 从“std::streamoff”转换到“int”，可能丢失数据
+f:\workspace\my_cpp_test\iostream_test\iostream_test\main.cpp(65): error C2664: “std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::getline(_Elem *,std::streamsize,_Elem)”: 无法将参数 1 从“std::shared_ptr<char>”转换为“char *”
+          with
+          [
+              _Elem=char
+          ]
+  f:\workspace\my_cpp_test\iostream_test\iostream_test\main.cpp(65): note: 没有可用于执行该转换的用户定义的转换运算符，或者无法调用该运算符

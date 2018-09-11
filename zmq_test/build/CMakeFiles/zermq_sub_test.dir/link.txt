@@ -1,0 +1,1 @@
+/usr/bin/x86_64-linux-gnu-g++      CMakeFiles/zermq_sub_test.dir/zermq_sub_test.cpp.o  -o zermq_sub_test  -L/mnt/hgfs/linux_share/code/my_test_c++/zmq_test/build/lib  -L/usr/local/lib -rdynamic -lzmq -lpthread 

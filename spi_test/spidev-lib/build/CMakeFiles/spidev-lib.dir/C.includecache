@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/hdf_123/workspace/my_test_project/spi_test/spidev-lib/src/spidev_lib.c
+stdio.h
+-
+stdint.h
+-
+fcntl.h
+-
+stdlib.h
+-
+unistd.h
+-
+errno.h
+-
+sys/ioctl.h
+-
+string.h
+-
+linux/spi/spidev.h
+-
+spidev_lib.h
+/home/hdf_123/workspace/my_test_project/spi_test/spidev-lib/src/spidev_lib.h
+
+/home/hdf_123/workspace/my_test_project/spi_test/spidev-lib/src/spidev_lib.h
+stdint.h
+-
+

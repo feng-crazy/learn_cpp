@@ -1,0 +1,1 @@
+/home/hdf_123/Desktop/rpi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-g++   -g -Wall    CMakeFiles/spi-testcpp.dir/sample/spidev-testcpp.cc.o  -o spi-testcpp -rdynamic libspidev-lib++.a 

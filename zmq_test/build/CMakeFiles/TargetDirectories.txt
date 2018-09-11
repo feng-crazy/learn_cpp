@@ -1,0 +1,6 @@
+/mnt/hgfs/linux_share/code/my_test_c++/zmq_test/build/CMakeFiles/edit_cache.dir
+/mnt/hgfs/linux_share/code/my_test_c++/zmq_test/build/CMakeFiles/rebuild_cache.dir
+/mnt/hgfs/linux_share/code/my_test_c++/zmq_test/build/CMakeFiles/zermq_req_test.dir
+/mnt/hgfs/linux_share/code/my_test_c++/zmq_test/build/CMakeFiles/zermq_sub_test.dir
+/mnt/hgfs/linux_share/code/my_test_c++/zmq_test/build/CMakeFiles/zermq_rep_test.dir
+/mnt/hgfs/linux_share/code/my_test_c++/zmq_test/build/CMakeFiles/zermq_pub_test.dir

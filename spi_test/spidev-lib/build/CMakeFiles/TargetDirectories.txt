@@ -1,0 +1,4 @@
+/home/hdf_123/workspace/my_test_project/spi_test/spidev-lib/build/CMakeFiles/spi-testc.dir
+/home/hdf_123/workspace/my_test_project/spi_test/spidev-lib/build/CMakeFiles/spi-testcpp.dir
+/home/hdf_123/workspace/my_test_project/spi_test/spidev-lib/build/CMakeFiles/spidev-lib.dir
+/home/hdf_123/workspace/my_test_project/spi_test/spidev-lib/build/CMakeFiles/spidev-lib++.dir

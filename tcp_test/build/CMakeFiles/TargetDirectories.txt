@@ -1,0 +1,4 @@
+/mnt/hgfs/linux_share/code/my_test_c++/android_test/build/CMakeFiles/edit_cache.dir
+/mnt/hgfs/linux_share/code/my_test_c++/android_test/build/CMakeFiles/rebuild_cache.dir
+/mnt/hgfs/linux_share/code/my_test_c++/android_test/build/CMakeFiles/android_test_tcp_client.dir
+/mnt/hgfs/linux_share/code/my_test_c++/android_test/build/CMakeFiles/android_test_tcp_server.dir

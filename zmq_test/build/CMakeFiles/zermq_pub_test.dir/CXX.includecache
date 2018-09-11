@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/hgfs/linux_share/code/my_test_c++/zmq_test/MyZmq.h
+vector
+-
+string
+-
+cassert
+-
+ctime
+-
+cmath
+-
+memory
+-
+string.h
+-
+stdio.h
+-
+zmq.h
+-
+
+/mnt/hgfs/linux_share/code/my_test_c++/zmq_test/zermq_pub_test.cpp
+zmq.h
+-
+assert.h
+-
+string
+-
+unistd.h
+-
+iostream
+-
+sstream
+-
+fstream
+-
+MyZmq.h
+/mnt/hgfs/linux_share/code/my_test_c++/zmq_test/MyZmq.h
+

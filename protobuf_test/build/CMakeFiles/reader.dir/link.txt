@@ -1,0 +1,1 @@
+/usr/bin/x86_64-linux-gnu-g++      CMakeFiles/reader.dir/LT.Interaction.pb.cc.o CMakeFiles/reader.dir/Reader.cpp.o  -o reader  -L/mnt/hgfs/linux_share/code/my_test_c++/protobuf_test/build/lib  -L/usr/local/lib -rdynamic -lprotobuf 

@@ -1,0 +1,1 @@
+/usr/local/arm/rpi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-g++      CMakeFiles/android_test_tcp_client.dir/tcp_client.cpp.o  -o android_test_tcp_client  -L/mnt/hgfs/linux_share/code/my_test_c++/android_test/build/lib  -L/usr/local/arm/lib -rdynamic 

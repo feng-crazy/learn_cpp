@@ -73,7 +73,7 @@ int SpiDevice::xfer(uint8_t *p_txbuffer, int p_txlen, uint8_t *p_rxbuffer, int p
     return ioctl(m_spifd, SPI_IOC_MESSAGE(2), spi_message);
 }
 
-int SpiDevice::write(uint8_t *p_txbuffer,int p_txlen)
+int SpiDevice::spi_write(uint8_t *p_txbuffer,int p_txlen)
 {
     struct spi_ioc_transfer spi_message[1];
     memset(spi_message, 0, sizeof(spi_message));
@@ -89,7 +89,7 @@ int SpiDevice::write(uint8_t *p_txbuffer,int p_txlen)
 
 
 
-int SpiDevice::read(uint8_t *p_rxbuffer,int p_rxlen)
+int SpiDevice::spi_read(uint8_t *p_rxbuffer,int p_rxlen)
 {
     struct spi_ioc_transfer spi_message[1];
     memset(spi_message, 0, sizeof(spi_message));

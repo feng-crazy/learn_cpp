@@ -40,9 +40,9 @@ int  main( void)
 //	printf("\n");
 
 
-	int send_ret = mySPI->write(tx_buffer,ARRAY_SIZE(tx_buffer));
+	int send_ret = mySPI->spi_write(tx_buffer,ARRAY_SIZE(tx_buffer));
 	printf("send_ret = %d read_len = %d\n",send_ret,ARRAY_SIZE(rx_buffer));
-	int recv_ret = mySPI->read(rx_buffer,ARRAY_SIZE(rx_buffer));
+	int recv_ret = mySPI->spi_read(rx_buffer,ARRAY_SIZE(rx_buffer));
 	printf("recv_ret = %d\n",recv_ret);
 	for (int ret = 0; ret < sizeof(rx_buffer); ret++) {
 //		if(rx_buffer[ret] == 0)

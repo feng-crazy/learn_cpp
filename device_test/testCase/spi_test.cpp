@@ -51,7 +51,7 @@ int main()
 //		printf(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>diff_time = %d ms \n",diff_time);
 //		ts = td;
 
-		spi_read_len = spi_dev->read(buff, sizeof(buff));
+		spi_read_len = spi_dev->spi_read(buff, sizeof(buff));
 		printf("spi read-------len = %d------------\n",spi_read_len);
 		for(int i=0;i<spi_read_len;i++)
 		{

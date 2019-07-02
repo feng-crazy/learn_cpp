@@ -2,9 +2,6 @@
 //测试iostream的代码
 //
 
-#include "stdafx.h"
-
-
 #include <iostream>
 #include <sstream>
 #include <string>
@@ -12,6 +9,15 @@
 #include <fstream>
 
 using namespace std;
+
+int main()
+{
+	std::ifstream input("test.txt",ios::binary);
+	std::ofstream output("copy1.txt",ios::binary);
+
+	output << input.rdbuf();
+	return 0;
+}
 
 int main3() {
 	char ch;
@@ -90,7 +96,7 @@ int main1()
 	}
 
 
-	system("pause");
+//	system("pause");
 	return 0;
 }
 

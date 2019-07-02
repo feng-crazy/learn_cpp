@@ -51,7 +51,7 @@ int main()
 		unsigned char *p = vec_buff.data();
 
 		int spi_read_len = -1;
-		spi_read_len = spi_dev->read(p, sizeof(buff));
+		spi_read_len = spi_dev->spi_read(p, sizeof(buff));
 		printf("spi read-------len = %d------------\n",spi_read_len);
 		for(int i=0;i<spi_read_len;i++)
 		{

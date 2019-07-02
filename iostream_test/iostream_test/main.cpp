@@ -21,7 +21,7 @@ int main5()
 
 	ifstream is;
 	string filename = "test.txt";
-	is.open(filename, ios::binary);
+	is.open(filename.c_str(), ios::binary);
 
 	ofstream out("out_test.txt", ios::app);
 	out.close();

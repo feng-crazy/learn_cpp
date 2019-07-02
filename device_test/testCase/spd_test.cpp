@@ -36,7 +36,7 @@ int main(int, char* [])
         spd::set_level(spd::level::info);
 
         // Change format pattern to all loggers
-        spd::set_pattern(" **** %Y-%m-%d %H:%M:%S.%e %l **** %v");
+        spd::set_pattern("  %Y-%m-%d %H:%M:%S.%e %l %v");
         spd::get("console")->info("This is another message with different format");
 
 //        spd::set_level(spd::level::warn);
@@ -44,7 +44,8 @@ int main(int, char* [])
         int i = 0;
         float f = 0.0;
 //        console->warn("hdf:spd test:count = %d i = %d f = {:f}", count,i,f);//不支持的格式
-//        console->warn() << "hdf:spd test:count";//不支持的格式
+        console->warn("haha hdf:spd test:count = %d i = %d", count,i);
+        console->warn() << "hdf:spd test:count";//不支持的格式
         count++;i++;f++;
         console->warn("hdf:spd test:count = {} i = {} f = {:f}", count,i,f);
         count++;i++;f++;
